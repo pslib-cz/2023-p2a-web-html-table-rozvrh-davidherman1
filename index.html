@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .html {
+            font-family: sans-serif;
+        }
+ 
+        .blue {
+            background-color: rgb(93, 93, 211);
+            border: 1px solid rgb(222, 255, 37);
+        }
+ 
+        .red {
+            background-color: red;
+            border: 1px solid rgb(222, 22, 240);
+        }
+ 
+        .green {
+            background-color: green;
+            border: 1px solid rgb(36, 226, 233);
+        }
+ 
+        table {
+            background-color: rgb(245, 245, 245);
+            text-align: center;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+ 
+        th,
+        td {
+            border: 1px solid rgb(132, 81, 226);
+            padding: 0.5em;
+ 
+        }
+ 
+        tbody tr:nth-child(odd) {
+            background-color: yellow;
+        }
+ 
+        .prvni {
+            background-color: rgb(79, 143, 83);
+        }
+    </style>
+</head>
+ 
+<body>
+    OwO
+    <table>
+        <colgroup class="prvni">
+            <col>
+        </colgroup>
+        <col span="4">
+        <thead>
+            <tr>
+                <th></th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+        </thead>
+        <tbody>
+ 
+            <tr>
+                <th>I.</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+ 
+            <tr>
+                <th>II.</th>
+                <td colspan="2" class="blue">5</td>
+                <td rowspan="2" class="red">6</td>
+                <td>7</td>
+            </tr>
+ 
+            <tr>
+                <th>III.</th>
+                <td colspan="2" rowspan="2" class="green">8</td>
+                <td>9</td>
+            </tr>
+ 
+            <tr>
+                <th>IV.</th>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <th>Pá
+                   
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+ 
+</html>

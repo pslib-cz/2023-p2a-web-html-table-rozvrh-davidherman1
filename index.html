@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,56 +9,69 @@
         .html {
             font-family: sans-serif;
         }
- 
+
+        .mezera {
+            border: none;
+        }
+
         .blue {
             background-color: rgb(93, 93, 211);
             border: 1px solid rgb(222, 255, 37);
         }
- 
+
         .red {
             background-color: red;
             border: 1px solid rgb(222, 22, 240);
         }
- 
+
         .green {
             background-color: green;
             border: 1px solid rgb(36, 226, 233);
         }
- 
+
         table {
             background-color: rgb(245, 245, 245);
             text-align: center;
             border-spacing: 0;
-            border-collapse: collapse;
+            border-spacing: 0.5em;
+
         }
- 
-        th,
-        td {
-            border: 1px solid rgb(132, 81, 226);
+
+        th {
+            border: 1px solid rgb(0, 0, 0);
             padding: 0.5em;
- 
+            width: .5%;
+            height: 5%;
+            min-width: 30px;
         }
- 
-        tbody tr:nth-child(odd) {
-            background-color: yellow;
+
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 0.5em;
+            width: 4%;
+            height: 5%;
+
         }
- 
+
+
+        .days {
+            width: 30px;
+        }
+
         .prvni {
             background-color: rgb(79, 143, 83);
         }
     </style>
 </head>
- 
+
 <body>
     OwO
     <table>
-        <colgroup class="prvni">
-            <col>
-        </colgroup>
-        <col span="4">
+
         <thead>
+
             <tr>
-                <th></th>
+                <th class="mezera"></th>
                 <th>0</th>
                 <th>1</th>
                 <th>2</th>
@@ -71,42 +84,92 @@
                 <th>9</th>
                 <th>10</th>
             </tr>
+
         </thead>
         <tbody>
- 
+
             <tr>
-                <th>I.</th>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-            </tr>
- 
-            <tr>
-                <th>II.</th>
-                <td colspan="2" class="blue">5</td>
-                <td rowspan="2" class="red">6</td>
-                <td>7</td>
-            </tr>
- 
-            <tr>
-                <th>III.</th>
-                <td colspan="2" rowspan="2" class="green">8</td>
-                <td>9</td>
-            </tr>
- 
-            <tr>
-                <th>IV.</th>
-                <td>10</td>
-                <td>11</td>
+                <th rowspan="3">PO</th>
+                <td colspan="3">PRA</td>
+                <td rowspan="3">MAT</td>
+                <td class="mezera"></td>
+                <td rowspan="3">CJL</td>
+                <td rowspan="3">ELZ</td>
+                <td rowspan="3">EEN</td>
+                <td class="mezera"></td>
+                <td class="mezera"></td>
+                <td class="mezera"></td>
             </tr>
             <tr>
-                <th>Pá
-                   
-                </th>
+                <td colspan="3">PRA</td>
+
+
+
+            </tr>
+            <tr>
+                <td colspan="3">PRA</td>
+
+            </tr>
+            <tr>
+                <th rowspan="2">ÚT</th>
+                <td rowspan="2" class="mezera"></td>
+                <td rowspan="2">AUT</td>
+                <td>ANJ</td>
+                <td rowspan="2">MAT</td>
+                <td class="mezera"></td>
+                <td rowspan="2">EEN</td>
+                <td rowspan="2">ESP</td>
+                <td rowspan="2">VEE</td>
+                <td rowspan="2">ZSV</td>
+            </tr>
+            <tr>
+                <td> ANJ</td>
+            </tr>
+            <tr>
+                <th rowspan="3">ST</th>
+                <td colspan="3">ELM</td>
+                <td rowspan="3">VEE</td>
+                <td class="mezera"></td>
+                <td rowspan="3">ESP</td>
+                <td rowspan="3">OUT</td>
+                <td rowspan="3" colspan="3">ELM</td>
+
+            </tr>
+            <tr>
+                <td colspan="3">ELM</td>
+            </tr>
+            <tr>
+                <td colspan="3">ELM</td>
+            </tr>
+            <tr>
+                <th rowspan="2">ČT</th>
+                <td rowspan="2" class="mezera"></td>
+                <td>ANJ</td>
+                <td rowspan="2">MAT</td>
+                <td rowspan="2">ESP</td>
+                <td rowspan="2" class="mezera"></td>
+                <td rowspan="2">VEE</td>
+                <td rowspan="2">ELZ</td>
+                <td colspan="2">PPL</td>
+            </tr>
+            <tr>
+                <td>ANJ</td>
+                <td colspan="2">PPL</td>
+            </tr>
+            <tr>
+                <th rowspan="2">PÁ</th>
+                <td class="mezera" rowspan="2"></td>
+                <td rowspan="2">CJL</td>
+                <td rowspan="2" colspan="2">TEV</td>
+                <td rowspan="2">ZSV</td>
+                <td>ANJ</td>
+                <td rowspan="2">EEN</td>
+            </tr>
+            <tr>
+                <td>ANJ</td>
             </tr>
         </tbody>
     </table>
 </body>
- 
+
 </html>

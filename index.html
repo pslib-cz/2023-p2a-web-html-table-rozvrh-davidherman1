@@ -10,8 +10,12 @@
             font-family: sans-serif;
         }
 
+
         .mezera {
             border: none;
+            background-color: rgb(248, 246, 253);
+            box-shadow: none;
+            visibility: hidden;
         }
 
         .blue {
@@ -30,29 +34,53 @@
         }
 
         table {
-            background-color: rgb(245, 245, 245);
+            background-color: rgb(248, 246, 253);
             text-align: center;
-            border-spacing: 0;
+            border-radius: 17px;
             border-spacing: 0.5em;
-
+            border: 3px solid black;
+            font-family: Verdana;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(imgs/galaxy3.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
         }
 
         th {
-            border: 1px solid rgb(0, 0, 0);
+            border: 0.5px solid rgb(117, 117, 117);
             padding: 0.5em;
             width: .5%;
             height: 5%;
             min-width: 30px;
+            background-color: rgb(209, 209, 248);
+          
+            background-image: url(imgs/galaxy2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
         }
 
         td {
-            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            background-color: rgb(235, 231, 248);
             padding: 0.5em;
             width: 4%;
             height: 5%;
-
+           
         }
 
+        .th-left {
+            border-radius: 10px 0 0 10px;
+        }
+
+        .tabulka thead th:not(first-child) {
+            border-radius: 10px 10px 0 0;
+        }
 
         .days {
             width: 30px;
@@ -61,12 +89,20 @@
         .prvni {
             background-color: rgb(79, 143, 83);
         }
+
+        p {
+            margin: 0;
+        }
+
+        .lunch-hour {
+            background-color: #d2e0e0;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
 <body>
-    OwO
-    <table>
+    <table class="tabulka">
 
         <thead>
 
@@ -89,65 +125,82 @@
         <tbody>
 
             <tr>
-                <th rowspan="3">PO</th>
-                <td colspan="3">PRA</td>
-                <td rowspan="3">MAT</td>
-                <td class="mezera"></td>
-                <td rowspan="3">CJL</td>
-                <td rowspan="3">ELZ</td>
-                <td rowspan="3">EEN</td>
+                <th rowspan="3" class="th-left">PO
+
+                </th>
+                <td colspan="3"><p>PRA</p><p>Sem</p>
+                </td>
+                <td rowspan="3"><p>MAT</p><p>Ryc</p>
+                </td>
+                <td rowspan="3" class=" lunch-hour">Lunch</td>
+                <td rowspan="3"><p>CJL</p><p>Krl</p>
+                </td>
+                <td rowspan="3"><p>ELZ</p><p>Sat</p>
+                </td>
+                <td rowspan="3"><p>EEN</p><p>Pet</p>
+                </td>
                 <td class="mezera"></td>
                 <td class="mezera"></td>
                 <td class="mezera"></td>
             </tr>
             <tr>
-                <td colspan="3">PRA</td>
+                <td colspan="3"><p>PRA</p><p>Vat</p>
+                </td>
 
 
 
             </tr>
             <tr>
-                <td colspan="3">PRA</td>
+                <td colspan="3"><p>PRA</p><p>Kul</p>
+                </td>
 
             </tr>
             <tr>
-                <th rowspan="2">ÚT</th>
+                <th rowspan="2" class="th-left">ÚT</th>
                 <td rowspan="2" class="mezera"></td>
-                <td rowspan="2">AUT</td>
+                <td rowspan="2"><p>AUT</p><p>Mat</p>
+                </td>
+                <td><p>ANJ</p><p>Val</p>
+                </td>
+                <td rowspan="2"><p>MAT</p><p>Ryc</p>
+                </td>
+                <td rowspan="2" class=" lunch-hour">Lunch</td>
+                <td rowspan="2"><p>EEN</p><p>Pet</p>
+                </td>
+                <td rowspan="2"><p>ESP</p><p>Tes</p>
+                </td>
+                <td rowspan="2"><p>VEE</p><p>Tes</p>
+                </td>
+                <td rowspan="2"><p>ZSV</p><p>Krl</p>
+                </td>
+            </tr>
+            <tr>
+                <td><p>ANJ</p><p>Rei</p>
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="th-left">ST</th>
+                <td colspan="3"><p>ELM</p><p>Tes</p>
+                </td>
+                <td rowspan="2"><p>VEE</p></td>
+                <td rowspan="2" class=" lunch-hour">Lunch</td>
+                <td rowspan="2">ESP</td>
+                <td rowspan="2">OUT</td>
+                <td rowspan="2" colspan="3">ELM</td>
+
+            </tr>
+            <tr>
+                <td colspan="3">ELM<p>Pet</p>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2" class="th-left">ČT</th>
+                <td rowspan="2" class="mezera"></td>
                 <td>ANJ</td>
                 <td rowspan="2">MAT</td>
-                <td class="mezera"></td>
-                <td rowspan="2">EEN</td>
                 <td rowspan="2">ESP</td>
-                <td rowspan="2">VEE</td>
-                <td rowspan="2">ZSV</td>
-            </tr>
-            <tr>
-                <td> ANJ</td>
-            </tr>
-            <tr>
-                <th rowspan="3">ST</th>
-                <td colspan="3">ELM</td>
-                <td rowspan="3">VEE</td>
-                <td class="mezera"></td>
-                <td rowspan="3">ESP</td>
-                <td rowspan="3">OUT</td>
-                <td rowspan="3" colspan="3">ELM</td>
-
-            </tr>
-            <tr>
-                <td colspan="3">ELM</td>
-            </tr>
-            <tr>
-                <td colspan="3">ELM</td>
-            </tr>
-            <tr>
-                <th rowspan="2">ČT</th>
-                <td rowspan="2" class="mezera"></td>
-                <td>ANJ</td>
-                <td rowspan="2">MAT</td>
-                <td rowspan="2">ESP</td>
-                <td rowspan="2" class="mezera"></td>
+                <td rowspan="2" class="lunch-hour">Lunch</td>
                 <td rowspan="2">VEE</td>
                 <td rowspan="2">ELZ</td>
                 <td colspan="2">PPL</td>
@@ -157,13 +210,14 @@
                 <td colspan="2">PPL</td>
             </tr>
             <tr>
-                <th rowspan="2">PÁ</th>
+                <th rowspan="2" class="th-left">PÁ</th>
                 <td class="mezera" rowspan="2"></td>
                 <td rowspan="2">CJL</td>
                 <td rowspan="2" colspan="2">TEV</td>
                 <td rowspan="2">ZSV</td>
                 <td>ANJ</td>
                 <td rowspan="2">EEN</td>
+                <td rowspan="2" class="lunch-hour">Lunch</td>
             </tr>
             <tr>
                 <td>ANJ</td>
